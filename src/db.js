@@ -591,7 +591,7 @@
             var deferred = Deferred();
 
             if (options.dbInstance) {
-                openWithInstance(dbInstance)
+                openWithInstance(options.dbInstance)
                     .done(deferred.resolve)
                     .fail(deferred.reject)
                     .progress(deferred.notify);
